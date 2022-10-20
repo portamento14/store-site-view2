@@ -1,0 +1,250 @@
+body {
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+}
+body header {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  height: 72px;
+  text-align: center;
+}
+body header .title {
+  text-align: center;
+  line-height: 72px;
+  font-weight: bold;
+  border-bottom: none;
+  color: black;
+}
+body header .title a {
+  text-decoration: none;
+  color: black;
+}
+body #hamburger-menu {
+  width: 72px;
+  height: 72px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+body #hamburger-menu span {
+  margin-left: auto;
+  width: 40px;
+  height: 2px;
+  background-color: black;
+  position: absolute;
+  right: 0;
+}
+body span:nth-child(1) {
+  top: 24px;
+}
+body span:nth-child(2) {
+  top: 40px;
+}
+body #hamburger-menu:hover {
+  opacity: 0.4;
+}
+
+#hamburger-menu.invisible {
+  display: none;
+}
+
+#container {
+  margin: 0 auto;
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1em;
+}
+#container .product-fearture {
+  text-decoration: none;
+}
+#container .product-fearture img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+#container .product-fearture .description p {
+  font-size: 10px;
+  color: black;
+  text-decoration: none;
+}
+#container .product-fearture-hidden {
+  text-decoration: none;
+  display: none;
+}
+#container .product-fearture-hidden img {
+  display: block;
+  width: 100%;
+}
+#container .product-fearture-hidden .description p {
+  font-size: 10px;
+  color: black;
+  text-decoration: none;
+}
+#container .product-fearture:hover {
+  opacity: 0.5;
+}
+
+footer {
+  height: 63px;
+}
+footer #view-more {
+  width: 100px;
+  margin: 0 auto;
+  font-size: 12px;
+  color: black;
+  text-align: center;
+}
+footer #view-more.invisible {
+  display: none;
+}
+footer #view-more2 {
+  margin: 0 auto;
+  width: 200px;
+  display: block;
+}
+footer #view-more2 ul {
+  display: flex;
+  width: 50%;
+  margin: 0 auto;
+}
+footer #view-more2 ul li {
+  list-style: none;
+  display: inline-block;
+  text-align: center;
+}
+footer #view-more2 ul li a {
+  display: inline-block;
+  width: 50px;
+  color: black;
+  text-decoration: none;
+}
+
+#view-more:hover {
+  opacity: 0.6;
+}
+
+.following-footer {
+  display: flex;
+  margin-top: 40px;
+}
+.following-footer nav {
+  text-align: center;
+}
+.following-footer nav ul {
+  display: flex;
+  width: 200px;
+  justify-content: space-between;
+  padding-left: 0;
+  margin: 0;
+}
+.following-footer nav li {
+  list-style: none;
+}
+.following-footer nav li a {
+  color: black;
+  text-decoration: none;
+  font-size: 8px;
+}
+
+.end {
+  font-size: 2px;
+  width: 100px;
+  margin-left: auto;
+}
+
+#cover {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #000000;
+  opacity: 0;
+  pointer-events: none;
+}
+#cover .cover-menu {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+}
+#cover nav {
+  margin-right: auto;
+}
+#cover nav ul {
+  list-style: none;
+}
+#cover nav li {
+  width: 200px;
+  text-align: left;
+  margin-bottom: 20px;
+  transform: translateX(-16px);
+  transition: transform 0.4s;
+}
+#cover nav li a {
+  width: 200px;
+  color: white;
+  opacity: 1;
+  text-decoration: none;
+}
+#cover #close-menu {
+  width: 72px;
+  height: 72px;
+  display: flex;
+  flex-direction: column;
+  background-color: #000000;
+  top: 0;
+  right: 0;
+}
+#cover span {
+  margin-left: auto;
+  width: 40px;
+  height: 2px;
+  background-color: white;
+  position: absolute;
+  right: 0;
+  transition: 0.3s ease-in-out;
+}
+#cover span:nth-child(1) {
+  top: 24px;
+}
+#cover span:nth-child(2) {
+  top: 40px;
+}
+
+#close-menu.active span:nth-child(1) {
+  top: 40px;
+  transform: rotate(45deg);
+}
+
+#close-menu.active span:nth-child(2) {
+  transform: rotate(-45deg);
+  top: 40px;
+}
+
+#cover.show {
+  opacity: 0.6;
+  pointer-events: auto;
+}
+#cover.show li {
+  transform: none;
+}
+
+@media screen and (max-width: 900px) {
+  #container {
+    margin: 0 auto;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat(2, 2fr);
+    gap: 1em;
+  }
+}/*# sourceMappingURL=view2.css.map */
